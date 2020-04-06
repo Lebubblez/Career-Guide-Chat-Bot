@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+<category>
+<pattern>Hi</pattern>
+ <delay>
+<template>Hello! I am your virtual computer science career advisor. 
+I help students identify jobs in computing fields for which they are qualified. 
+Would you like to find out which occupation suits you? Type 'yes' or 'no'.
+</template>
+</delay>
+</category>	
+
+<category>
+<pattern>hi</pattern>
+<template>Hello! I am your virtual computer science career advisor. 
+I help students identify jobs in computing fields for which they are qualified. 
+Would you like to find out which occupation suits you? Type 'yes' or 'no'.
+</template>
+</category>	
+
+<category>
+    <pattern>yes</pattern>
+    <that>TYPE YES OR NO</that>
+    <delay>
+        <template>
+            Great! Let's get started.
+            Do you have strong communication skills, 
+            or weak communication skills? Type 'strong' or 'weak'.
+        </template>
+    </delay>
+</category>
+
+<category>
+<pattern>no</pattern>
+<that>TYPE YES OR NO</that>
+<delay>
+    <template>Oof. That is too bad. CS Career advice is my only expertise. 
+    Would you like some career advice? Type 'yes' or 'no'. 
+     </template>
+    </delay>
+</category>
+
+<category>
+<pattern>strong</pattern>
+<that>TYPE STRONG OR WEAK</that>
+<template>Awesome! What do you value in a job more: Creativity, or 
+directly working with people? Type 'creativity' or 'people'. </template>
+</category>
+
+<category>
+<pattern>creativity</pattern>
+<that>TYPE CREATIVITY OR PEOPLE</that>
+<template>Sounds good! What Do you find more interesting: Application development,
+or website development? Type 'app' or 'web'.</template>
+</category>
+
+<category>
+<pattern>people</pattern>
+<that>TYPE CREATIVITY OR PEOPLE</that>
+<template>You matched with: IT PROJECT MANAGER. Project managers in the IT sector coordinate the efforts of a team of programmers/developers and analysts to complete projects. They also analyze technical problems for their company or a client organization, proposing solutions and tips to enhance productivity.
+Problem-solving skills and a broad knowledge of technology and computer systems help computer science majors excel in this role. Strong communication skills are required to decipher the needs of users and convey technical specifications to developers.
+According to Payscale, project managers earn an average income of $87,907.
+</template>
+</category>
+
+<category>
+<pattern>web</pattern>
+<that>TYPE APP OR WEB</that>
+<template>You matched with: WEB DEVELOPER.
+Web developers assess the needs of users for information-based resources. They create the technical structure for websites and make sure that web pages are accessible and easily downloadable through a variety of browsers and interfaces.
+Web developers structure sites to maximize the number of page views and visitors through search engine optimization. They must have the communication skills and creativity needed to ensure the website meets its users' needs.
+According to the BLS, web developers earned a median income of $69,430 in May 2018 and employment was expected to grow by 13% from 2018 to 2028âmuch faster than average.</template>
+</category>
+
+<category>
+<pattern>app</pattern>
+<that>TYPE APP OR WEB</that>
+<template>You matched with: SOFTWARE DEVELOPER.
+Software developers create software programs that allow users to perform specific tasks on various devices, such as computers or mobile devices. They are responsible for the entire development, testing, and maintenance of software.
+Software developers must have the technical creativity required to solve problems uniquely. They need to be fluent in the computer languages that are used to write the code for programs.
+Communication skills are vital for securing the necessary information and insight from end users about how the software is functioning.
+According to the Bureau of Labor Statistics (BLS), software developers earned a median income of $105,590 in May 2018, and employment was expected to grow by 21% from 2018 to 2028âmuch faster than average for all occupations.</template>
+</category>
+
+<category>
+<pattern>weak</pattern>
+<that>TYPE STRONG OR WEAK</that>
+<template>Great to know! What interests you more: Working directly with databases,
+or data security/breaches? Type 'database' or 'security'. </template>
+</category>
+
+<category>
+<pattern>security</pattern>
+<that>TYPE DATABASE OR SECURITY</that>
+<template>You matched with: INFORMATION SECURITY ANALYST.
+Information security analysts create systems to protect information networks and websites from cyberattacks and other security breaches. Their responsibilities also include researching trends in data security to anticipate problems and install systems to prevent issues before they occur.
+Security analysts also need strong problem-solving skills to investigate breaches, determine the causes, and modify or repair security systems.
+According to the BLS, information security analysts earned a median income of $98,350 in May 2018 and employment was expected to grow by 32% from 2018 to 2028âmuch faster than average. </template>
+</category>
+
+<category>
+<pattern>database *</pattern>
+<that>TYPE DATABASE OR SECURITY</that>
+<template>You matched with: DATABASE ADMINISTRATOR. 
+Database administrators analyze and evaluate the data needs of users. They develop and improve the data resources used to store and retrieve critical information.
+They need the problem-solving skills of the computer science major to correct any malfunctions in databases and to modify systems in line with the evolving needs of users.
+According to the BLS, database administrators earned a median income of $90,070 in May 2018, and employment was expected to grow by 9% from 2018 to 2028, which is faster than average. </template>
+</category>
+
+</aiml>
