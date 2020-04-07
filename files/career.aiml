@@ -5,7 +5,7 @@
 <pattern>*</pattern>
 <template>
 <random>
-<li>Huh? Try telling me again. </li>
+<li>Huh? Try again. </li>
 <li>I donât understand. </li>
 <li>That didn't make sense. Please type one of the two responses.</li>
 </random>
@@ -13,9 +13,8 @@
 </category>
 
 <category>
-    <pattern>hi</pattern>
+    <pattern><set>greetings</set></pattern>
     <template>Hello! I am your virtual computer science career advisor. I help students identify jobs in computing fields for which they are qualified. Would you like to find out which occupation suits you? 
-
 Type 'yes' or 'no'.
 </template>
 </category>
